@@ -27,7 +27,7 @@ def main(args):
     f = open("np.txt")  # read file like "username@domain password"
     for line in f:
         k = str.split(line)
-        subprocess.check_call(["echo", "I will run :", "imapsync --login1", k[0], " --password1 ", k[1]])
+        subprocess.check_call(["echo", "I will running :", "imapsync --login1", k[0], " --password1 ", k[1]])
     print("Ok")
     return 0
 
